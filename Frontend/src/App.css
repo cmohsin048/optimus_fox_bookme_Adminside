@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 30px 0px;
+  background-color: #007aff;
+}
+.nav ul {
+  display: flex;
+  gap: 20px;
+}
+.nav ul li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-list {
+  list-style: none;
+  text-decoration: none;
+  color: #ffff;
+}
+.dropdown {
+  height: 300px;
+  overflow: auto;
+  position: absolute;
+  min-width: 250px;
+  z-index: 100 !important;
+  background-color: #fff;
+}
+.search-input {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  border: 1px solid #666;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  font-size: 16px;
+  max-width: 250px;
+  min-width: 100px;
+  padding: 12px 20px 12px 15px;
+  margin-bottom: 20px;
+}
+.search-input:focus {
+  outline: #fff;
+}
+.search-input .MuiInputLabel-root {
+  color: black; /* Default label color */
+}
+
+.search-input .MuiInputLabel-root.Mui-focused {
+  color: white;
+  display: none;
+}
+.route {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #fec84b;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-size: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.List {
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 12px;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.first-item {
+  margin-top: 0;
+  gap: 10px;
+}
+
+.List:not(.first-item) {
+  margin-top: -1px;
+}
+
+.List:hover {
+  background-color: #eee;
+}
+
+.detail-card {
+  background-color: #fff;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+  padding: 10px;
+  color: #101828;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.details {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #d0d4dd;
+  border-bottom: 1px solid #d0d4dd;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.tf {
+  display: flex;
+  gap: 10px;
+}
+.ts {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: end;
+}
+.fb {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 20px;
+}
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
